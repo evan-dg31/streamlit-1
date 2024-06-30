@@ -36,10 +36,9 @@ category = st.selectbox(
 st.write("You selected:", category)
 
 st.write("### (2) add a multi-select for Sub_Category *in the selected Category (1)* (https://docs.streamlit.io/library/api-reference/widgets/st.multiselect)")
-options = st.multiselect(
-    "Select a Sub_Category",
-    ["Bookcases", "Chairs", "Furnishings", "Tables"],
-    ["Yellow", "Red"])
+options = df["Sub_Category"].unique()
+selected_options = st.multiselect(
+    "Select a Sub_Category", options, default=options)
 
 st.write("### (3) show a line chart of sales for the selected items in (2)")
 df[df["Sub_Category"]==subcat]
