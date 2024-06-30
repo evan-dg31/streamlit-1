@@ -53,7 +53,7 @@ st.metric(label='Total Profit', value=f"{total_profit:,.2f}")
 st.metric(label='Profit Margin', value=f"{profit_margin:,.2f}%")
 
 st.write("### (5) use the delta option in the overall profit margin metric to show the difference between the overall average profit margin (all products across all categories)")
-overall_total_sales = df['Sales].sum()
+overall_total_sales = df['Sales'].sum()
 overall_total_profit = df['Profit'].sum()
 overall_profit_margin = overall_total_profit/overall_total_sales * 100 if overall_total_sales !=0 else 0
 profit_margin_delta = profit_margin - overall_profit_margin
