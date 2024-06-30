@@ -38,11 +38,8 @@ st.write("You selected:", category)
 st.write("### (2) add a multi-select for Sub_Category *in the selected Category (1)* (https://docs.streamlit.io/library/api-reference/widgets/st.multiselect)")
 subcat = st.multiselect(
     "What are your Sub_Category",
-    ["Furniture", "Office Supplies", "Technology"],
     ["Bookcases", "Chairs", "Furnishings", "Tables"],
-    ["Furniture", "Office Supplies", "Technology"],
     ["Appliances", "Art", "Binders", "Envelopes", "Fasteners","Labels", "Paper", "Storage", "Supplies"],
-    ["Furniture", "Office Supplies", "Technology"],
     ["Accessories", "Copiers", "Machines", "Phones"])
 
 st.write("You selected:", subcat)
