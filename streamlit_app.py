@@ -37,8 +37,8 @@ st.write("You selected:", category)
 
 st.write("### (2) add a multi-select for Sub_Category *in the selected Category (1)* (https://docs.streamlit.io/library/api-reference/widgets/st.multiselect)")
 options = st.multiselect(
-    "What are your favorite colors",
-    ["Green", "Yellow", "Red", "Blue"],
+    "Select a Sub_Category",
+    ["Bookcases", "Chairs", "Furnishings", "Tables"],
     ["Yellow", "Red"])
 
 st.write("### (3) show a line chart of sales for the selected items in (2)")
